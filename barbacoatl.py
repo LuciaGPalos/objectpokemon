@@ -40,7 +40,7 @@ class Solo_maciza(BaseMove):
         self.set_type(Type.EARTH)
 
     def get_name(self):
-        return "Sólo maciza!"
+        return "Solo maciza!"
 
 
 class Dolor_de_estomago(BaseMove):
