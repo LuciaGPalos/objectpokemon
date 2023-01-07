@@ -31,7 +31,7 @@ class Te_pica_la_lengua(BaseMove):
         self.set_type(Type.FIRE)
 
     def get_name(self):
-        return "Te pica la lengua!!"
+        return "Te pica la lengua!"
 
 class Solo_maciza(BaseMove):
     def __init__(self):
