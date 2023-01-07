@@ -13,7 +13,7 @@ class Pokemon(BasePokemon):
         self.add_move(en_caldo())
         self.set_type(Type.WATER)
         self.move = 0
-        self.moves = ['Te pica la lengua!!', "Sólo maciza!", "Dolor de estomago!", "Barbacoa en caldo!"]
+        self.moves = ['Te_pica_la_lengua', "Solo_maciza", "Dolor_de_estomago", "Barbacoa_en_caldo"]
 
 
     def get_name(self):
@@ -24,7 +24,7 @@ class Pokemon(BasePokemon):
         self.move = self.move + 1 if self.move < len(self.moves) - 1 else 0
         return self.get_move_by_name(mov)
 
-class picar_lengua(BaseMove):
+class Te_pica_la_lengua(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
@@ -33,7 +33,7 @@ class picar_lengua(BaseMove):
     def get_name(self):
         return "Te pica la lengua!!"
 
-class solo_maciza(BaseMove):
+class Solo_maciza(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
@@ -43,7 +43,7 @@ class solo_maciza(BaseMove):
         return "Sólo maciza!"
 
 
-class estomago_fuerte(BaseMove):
+class Dolor_de_estomago(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
@@ -53,7 +53,7 @@ class estomago_fuerte(BaseMove):
         return "Dolor de estomago!"
 
 
-class en_caldo(BaseMove):
+class Barbacoa_en_caldo(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
